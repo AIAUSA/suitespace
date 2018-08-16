@@ -100,15 +100,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $grey-color;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($text-color, 15%);
   }
 
   &:hover {
-    color: #003366; //$text-color;
+    color: $text-color;
     text-decoration: underline;
   }
 
@@ -120,6 +120,36 @@ a {
     }
   }
 }
+
+a.white {
+  color: $grey-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($grey-color, 15%);
+  }
+
+  &:hover {
+    color: $grey-color;
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+/*
+:target {
+  display: block;
+  position: relative;
+  top: 5%; //$spacing-unit * 1.865; //-120px; 
+  visibility: hidden;
+}
+*/
 
 
 /**
