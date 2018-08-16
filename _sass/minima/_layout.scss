@@ -13,6 +13,7 @@
   
   // Positioning context for the mobile navigation icon
   position: sticky;
+  position: -webkit-sticky;
   border-bottom: 2px solid #fff;
 }
 
@@ -33,6 +34,7 @@
 .site-nav {
   float: right;
   line-height: 100px; //$base-line-height * $base-font-size * 2.25;
+  z-index: 1;
 
   .nav-trigger {
       display: none;
